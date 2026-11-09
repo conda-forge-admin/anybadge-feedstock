@@ -1,5 +1,5 @@
 {% set name = "anybadge" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/anybadge-{{ version }}.tar.gz
-  sha256: 757335e8850ca539d4483c60ed6585e1bb7afc65d482be8995f9aa19fb627f85
+  sha256: 1f275a1aa14a8d04d1043b420550504eb72d44d222fea78e2a6a0347f8a2e6e3
 
 build:
   entry_points:
