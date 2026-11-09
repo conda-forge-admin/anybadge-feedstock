@@ -1,13 +1,13 @@
 {% set name = "anybadge" %}
-{% set version = "1.16.0" %}
+{% set version = "1.17.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/anybadge-{{ version }}.tar.gz
-  sha256: f4e95eca834482f9932f9020ac2fe04a5ca863728b446324a8d35b1e67faab71
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/anybadge-{{ version }}.tar.gz
+  sha256: 757335e8850ca539d4483c60ed6585e1bb7afc65d482be8995f9aa19fb627f85
 
 build:
   entry_points:
@@ -21,7 +21,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=61
+    - setuptools-scm >=7
     - wheel
 
   run:
